@@ -16,6 +16,10 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* MyMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MyMoneyTests.m */; };
+		F1EE862D89F8400180F9094E /* Alegreya-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B1854BCB61FB473782C28A4A /* Alegreya-Bold.otf */; };
+		F6CCFFBDD3BA46DD85521C03 /* Alegreya-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 787B132D5CA24911A256C401 /* Alegreya-BoldItalic.otf */; };
+		A6107EA15A3B4F02BA4E7F50 /* Alegreya-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED8463FE36AB4731931B1AEF /* Alegreya-Italic.otf */; };
+		D987D3FAC25E4A099D0737F4 /* Alegreya-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76547B3E19A7443397091228 /* Alegreya-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		2D02E4901E0B4A5D006451C7 /* MyMoney-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyMoney-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		B1854BCB61FB473782C28A4A /* Alegreya-Bold.otf */ = {isa = PBXFileReference; name = "Alegreya-Bold.otf"; path = "../assets/fonts/Alegreya-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		787B132D5CA24911A256C401 /* Alegreya-BoldItalic.otf */ = {isa = PBXFileReference; name = "Alegreya-BoldItalic.otf"; path = "../assets/fonts/Alegreya-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED8463FE36AB4731931B1AEF /* Alegreya-Italic.otf */ = {isa = PBXFileReference; name = "Alegreya-Italic.otf"; path = "../assets/fonts/Alegreya-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		76547B3E19A7443397091228 /* Alegreya-Regular.otf */ = {isa = PBXFileReference; name = "Alegreya-Regular.otf"; path = "../assets/fonts/Alegreya-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,7 @@
 				00E356EF1AD99517003FC87E /* MyMoneyTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				AEFDEF33B8FE4C56984A5B4A /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -156,6 +165,18 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		AEFDEF33B8FE4C56984A5B4A /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				B1854BCB61FB473782C28A4A /* Alegreya-Bold.otf */,
+				787B132D5CA24911A256C401 /* Alegreya-BoldItalic.otf */,
+				ED8463FE36AB4731931B1AEF /* Alegreya-Italic.otf */,
+				76547B3E19A7443397091228 /* Alegreya-Regular.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -240,7 +261,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -293,6 +314,10 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				F1EE862D89F8400180F9094E /* Alegreya-Bold.otf in Resources */,
+				F6CCFFBDD3BA46DD85521C03 /* Alegreya-BoldItalic.otf in Resources */,
+				A6107EA15A3B4F02BA4E7F50 /* Alegreya-Italic.otf in Resources */,
+				D987D3FAC25E4A099D0737F4 /* Alegreya-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
