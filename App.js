@@ -8,6 +8,8 @@
 
 import React, { Component} from 'react';
 // import LinearGradient from 'react-native-linear-gradient';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 import {
   SafeAreaView,
   StyleSheet,
@@ -24,6 +26,7 @@ class App extends Component {
       <StatusBar barStyle="light-content" backgroundColor="#1EA531"/>
       {/* <LinearGradient colors={['#CEFBB2', '#3ec769']} style={styles.linearGradient}> */}
       <ImageBackground source={require('./assets/images/bg.png')} style={{width: '100%', height: '100%'}}>
+      <NavigationContainer>
         <SafeAreaView>
           <ScrollView
             contentInsetAdjustmentBehavior="automatic"
@@ -33,6 +36,7 @@ class App extends Component {
             </Text>
           </ScrollView>
         </SafeAreaView>
+        </NavigationContainer>
       </ImageBackground>
       {/* </LinearGradient> */}
     </>)
