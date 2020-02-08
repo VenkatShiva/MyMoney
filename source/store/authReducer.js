@@ -4,6 +4,7 @@ const initialState = {
     profile: {
         name:null,
         email:null,
+        username:null,
         password:null
     }
 };
