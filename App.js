@@ -15,30 +15,25 @@ import { PersistGate } from 'redux-persist/integration/react';
 
 import Store from './source/store/store';
 import MainStackNAvigator from './source/components/mainStackNavigator';
+import Loading from './source/components/loading';
 
 
 import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
   StatusBar,
   ImageBackground,
 } from 'react-native';
 
 const persistedStore = Store();
-console.log("console-->",persistedStore);
 class App extends Component {
   render (){
     return(<>
       <StatusBar barStyle="light-content" backgroundColor="#1EA531"/>
       {/* <LinearGradient colors={['#CEFBB2', '#3ec769']} style={styles.linearGradient}> */}
       {/* <ImageBackground source={require('./assets/images/bg.png')} style={{width: '100%', height: '100%'}}> */}
-        <Provider store={persistedStore.store}>
-        <PersistGate loading={null} persistor={persistedStore.persistor}>
+        <Provider store={persistedStore.store} >
+        <PersistGate loading={<Loading persistance= {true}/>} persistor={persistedStore.persistor} >
           <NavigationContainer>
-          <ImageBackground source={require('./assets/images/bg.png')} style={{width: '100%', height: '100%', flex:1}}>
+          {/* <ImageBackground source={require('./assets/images/bg.png')} style={{width: '100%', height: '100%', flex:1}}> */}
 
             <MainStackNAvigator />
             {/* <SafeAreaView>
@@ -50,7 +45,7 @@ class App extends Component {
                 </Text>
               </ScrollView>
             </SafeAreaView> */}
-          </ImageBackground>
+          {/* </ImageBackground> */}
           </NavigationContainer>
         </PersistGate>
         </Provider>
@@ -59,13 +54,4 @@ class App extends Component {
     </>)
   };
 };
-
-const styles = StyleSheet.create({
-  linearGradient:{
-    flex:1,
-  },
-  scrollView: {
-  },
-});
-
 export default App;

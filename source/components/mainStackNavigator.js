@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Loading from './loading';
-import Welcome from './welcome';
+import Authentication from './authetication';
 import Landing from './landing';
 
 
@@ -25,32 +25,33 @@ export default function MyStack() {
         initialRouteName="loading"
         headerMode="none"
         screenOptions={{
-            gestureEnabled: true,
-            cardStyle: { backgroundColor: 'transparent' },
+          cardStyle: { backgroundColor: 'white' },
         }}
-        cardStyle ={{
-            backgroundColor:"transparent"
-        }}
+        // cardStyle ={{
+        //     backgroundColor:"transparent"
+        // }}
       >
         <Stack.Screen
           name="loading"
           component={Loading}
           options={{
             title: "loading",
-            gestureDirection:"horizontal",
-            transitionSpec: {
-                open: config,
-                close: config,
-            }
+            // transitionSpec: {
+            //     open: config,
+            //     close: config,
+            // }
           }
         }
         />
         <Stack.Screen
-          name="welcome"
-          component={Welcome}
+          name="authentication"
+          component={Authentication}
           options={{
-            title: 'welcome',
-            gestureDirection:"horizontal",
+            title: 'authentication',
+          //   transitionSpec: {
+          //     open: config,
+          //     close: config,
+          // }
           }}
         />
         <Stack.Screen
@@ -58,10 +59,9 @@ export default function MyStack() {
           component={Landing}
           options={{
             title: 'landing',
-            gestureDirection:"horizontal",
-            cardStyleInterpolator:()=>({
-                cardStyle:{backgroundColor:"white"}
-            })
+            // cardStyleInterpolator:()=>({
+            //     cardStyle:{backgroundColor:"white"}
+            // })
           }}
         />
       </Stack.Navigator>

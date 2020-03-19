@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import styles from '../styles/styles';
-// import Welcome from './welcome';
-// import Landing from './signUp';
-// import Landing from './signIn';
+import { createStackNavigator } from '@react-navigation/stack';
 import {
   StyleSheet,
   Text,
