@@ -9,10 +9,10 @@ const Stack = createStackNavigator();
 export default function MyStack() {
     return (
       <Stack.Navigator
-        initialRouteName="welcome"
+        initialRouteName="signup"
         headerMode="none"
         screenOptions={{
-          cardStyle: { backgroundColor: 'white' },
+          cardStyle: { backgroundColor: '#F3F6FB' },
         }}
       >
         <Stack.Screen
@@ -24,17 +24,17 @@ export default function MyStack() {
         }
         />
         <Stack.Screen
-          name="signUp"
+          name="signup"
           component={signUp}
           options={{
-            title: 'signUp',
+            title: 'signup',
           }}
         />
         <Stack.Screen
-          name="signIn"
+          name="signin"
           component={signIn}
           options={{
-            title: 'signIn',
+            title: 'signin',
           }}
         />
       </Stack.Navigator>

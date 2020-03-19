@@ -15,7 +15,7 @@ export default class Authentication extends Component {
   render() {
     return (
       <View >
-          <Text style={styles.text}>Welcome</Text>
+          <Text style={styles.text}>SignIn</Text>
       </View>
     );
   }
